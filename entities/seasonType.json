@@ -1,0 +1,33 @@
+{
+  "id": "ab7e1d91-33c3-4d73-9a73-d75e2e2f844b",
+  "name": "seasonType",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "summer",
+      "synonyms": [
+        "summer",
+        "heat",
+        "midsummer",
+        "summertide",
+        "summertime",
+        "summer season",
+        "sunny",
+        "sunny season",
+        "hot season"
+      ]
+    },
+    {
+      "value": "winter",
+      "synonyms": [
+        "winter",
+        "cold",
+        "winttertide",
+        "wintertime",
+        "chill"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

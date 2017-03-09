@@ -1,0 +1,81 @@
+{
+  "userSays": [
+    {
+      "id": "5f141982-9009-4207-91b2-af7718184ff0",
+      "data": [
+        {
+          "text": "winter season",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "6e53c8ad-f934-4469-b05e-e82693604950",
+      "data": [
+        {
+          "text": "winter",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "a2a564b3-93e8-4096-a2bc-30ffebe63f59",
+  "name": "Season-rainy-winter",
+  "auto": true,
+  "contexts": [
+    "season",
+    "rainy"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "rainy",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [
+            "Please enter the season in which you wish to travel?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#rainy.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Cherapunji, Mausynram or Lonavala."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,99 @@
+{
+  "id": "56e6174f-6ae3-43ee-bc51-35d47d9da189",
+  "name": "creators",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "creators",
+      "synonyms": [
+        "creators"
+      ]
+    },
+    {
+      "value": "designer",
+      "synonyms": [
+        "designer"
+      ]
+    },
+    {
+      "value": "founder",
+      "synonyms": [
+        "founder"
+      ]
+    },
+    {
+      "value": "framer",
+      "synonyms": [
+        "framer"
+      ]
+    },
+    {
+      "value": "generator",
+      "synonyms": [
+        "generator"
+      ]
+    },
+    {
+      "value": "initiator",
+      "synonyms": [
+        "initiator"
+      ]
+    },
+    {
+      "value": "maker",
+      "synonyms": [
+        "maker"
+      ]
+    },
+    {
+      "value": "originator",
+      "synonyms": [
+        "originator"
+      ]
+    },
+    {
+      "value": "producer",
+      "synonyms": [
+        "producer"
+      ]
+    },
+    {
+      "value": "architect",
+      "synonyms": [
+        "architect"
+      ]
+    },
+    {
+      "value": "author",
+      "synonyms": [
+        "author"
+      ]
+    },
+    {
+      "value": "created",
+      "synonyms": [
+        "created"
+      ]
+    },
+    {
+      "value": "daddy",
+      "synonyms": [
+        "daddy"
+      ]
+    },
+    {
+      "value": "builder",
+      "synonyms": [
+        "builder"
+      ]
+    },
+    {
+      "value": "build",
+      "synonyms": [
+        "build"
+      ]
+    }
+  ],
+  "isEnum": true,
+  "automatedExpansion": true
+}

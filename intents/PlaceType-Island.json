@@ -1,0 +1,59 @@
+{
+  "userSays": [
+    {
+      "id": "abb58a40-2ca4-4a49-97b0-02a8c01dca76",
+      "data": [
+        {
+          "text": "island",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "7e5bf557-b913-4eae-af69-83804cf5dce7",
+  "name": "PlaceType-Island",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "island",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "$placeType",
+          "prompts": [
+            "Please enter the type of place that you wish to travel?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "in which season would like to travel"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

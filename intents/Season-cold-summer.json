@@ -1,0 +1,84 @@
+{
+  "userSays": [
+    {
+      "id": "b8241bb9-9285-435b-92d0-431b9ef0288d",
+      "data": [
+        {
+          "text": "summer",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        },
+        {
+          "text": " places"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "64b94607-39ee-4344-ba0b-c61cddddea8b",
+      "data": [
+        {
+          "text": "summer",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "7cf9f254-607f-49da-86a5-9bb4c7d92999",
+  "name": "Season-cold-summer",
+  "auto": true,
+  "contexts": [
+    "season",
+    "cold"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "cold",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [
+            "Please enter the season in which you wish to travel?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#cold.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Shimla, Manali, Gangtok or Leh-Laddak."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

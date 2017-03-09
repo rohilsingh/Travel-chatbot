@@ -1,0 +1,81 @@
+{
+  "userSays": [
+    {
+      "id": "9da2b35e-ff5b-4a12-9d71-5c1c6840876b",
+      "data": [
+        {
+          "text": "summer season",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "0fe9c1af-e18d-4cc3-afc7-85627817e65b",
+      "data": [
+        {
+          "text": "summer",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "4c059f4d-40c3-43ea-9325-0edc73057e18",
+  "name": "Season-warm-summer",
+  "auto": true,
+  "contexts": [
+    "season",
+    "warm"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "warm",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [
+            "Please enter the season in which you wish to travel?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#warm.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Jaipur, Jaisalmer or North East India."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

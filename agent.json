@@ -1,0 +1,28 @@
+{
+  "description": "Travel helper chatbot",
+  "language": "en",
+  "enabledDomainFeatures": [
+    "web-search-domain-on"
+  ],
+  "googleAssistant": {
+    "googleAssistantCompatible": true,
+    "invocationName": "Travel guide",
+    "project": "chatbot-project-158904",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "FEMALE_1"
+  },
+  "defaultTimezone": "IST",
+  "webhook": {
+    "available": false,
+    "useForDomains": false
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.2
+}

@@ -1,0 +1,81 @@
+{
+  "userSays": [
+    {
+      "id": "a7482b15-b6da-45f4-b17c-443ac96e3220",
+      "data": [
+        {
+          "text": "summer season",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "b07283c1-8cde-482d-a29c-7acb667a14df",
+      "data": [
+        {
+          "text": "summer",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "1ae64b93-fc49-4322-9d48-b86e1994371a",
+  "name": "Season-coastal-summer",
+  "auto": true,
+  "contexts": [
+    "season",
+    "coastal"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "coastal",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [
+            "Please enter the season in which you wish to travel?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#coastal.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Alibaug, Goa, Kerala or Chennai."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

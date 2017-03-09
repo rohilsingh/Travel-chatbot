@@ -1,0 +1,81 @@
+{
+  "userSays": [
+    {
+      "id": "7745a361-2881-46ca-8ce2-1cb27ee0c939",
+      "data": [
+        {
+          "text": "winter season",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "b20510ae-045b-42af-9138-b934474ad228",
+      "data": [
+        {
+          "text": "winter",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "7d4a9fc7-ca01-4073-bb62-a3d404a21a55",
+  "name": "Season-warm-winter",
+  "auto": true,
+  "contexts": [
+    "season",
+    "warm"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "warm",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [
+            "Please enter the season in which you wish to travel?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#warm.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Amritsar, Manali or Chandigarh."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

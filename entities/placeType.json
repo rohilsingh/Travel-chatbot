@@ -1,0 +1,66 @@
+{
+  "id": "0098c61e-6898-4f63-a5ee-368ddda5a2db",
+  "name": "placeType",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "cold",
+      "synonyms": [
+        "cold",
+        "chilly",
+        "snowy",
+        "snow",
+        "freezy",
+        "winter"
+      ]
+    },
+    {
+      "value": "warm",
+      "synonyms": [
+        "warm",
+        "heat",
+        "sunny",
+        "hot"
+      ]
+    },
+    {
+      "value": "coastal",
+      "synonyms": [
+        "coastal",
+        "seaside",
+        "riverine"
+      ]
+    },
+    {
+      "value": "rainy",
+      "synonyms": [
+        "rainy",
+        "drizzly",
+        "showery",
+        "stormy",
+        "wet"
+      ]
+    },
+    {
+      "value": "island",
+      "synonyms": [
+        "island",
+        "isle",
+        "peninsula"
+      ]
+    },
+    {
+      "value": "religious",
+      "synonyms": [
+        "religious",
+        "devotional",
+        "divine",
+        "holy",
+        "reverent",
+        "spiritual"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

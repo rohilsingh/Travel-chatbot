@@ -1,0 +1,79 @@
+{
+  "userSays": [
+    {
+      "id": "feca9d50-bea7-4832-a1a6-665090345fc1",
+      "data": [
+        {
+          "text": "winter season",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "1d948755-4e0e-4219-a411-b5ff11945f08",
+      "data": [
+        {
+          "text": "winter",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "89993fd2-112f-4e34-b57c-08840da37953",
+  "name": "Season-religious-winter",
+  "auto": true,
+  "contexts": [
+    "season",
+    "religious"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "religious",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#religious.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Mahabaleshwar, Vaishnodevi, AmarNath, Rishikesh or Haridwar."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,66 @@
+{
+  "userSays": [
+    {
+      "id": "e4076154-bc7a-45c5-b91d-9e8851a5390c",
+      "data": [
+        {
+          "text": "Give team introduction"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "fbb2abe8-0d2e-42e8-b951-8d2e7ba29cbb",
+      "data": [
+        {
+          "text": "Tell about us"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2f9a635f-19fc-4a1b-87ad-f737c2b0d6d4",
+      "data": [
+        {
+          "text": "Give our Introduction"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b85a29f6-e1ac-4c09-b3ec-259b9af9d91d",
+      "data": [
+        {
+          "text": "Introduce us"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "5a23a625-4a7b-41ef-a383-1b7a2a656cbc",
+  "name": "PPT-Intro",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Good Afternoon everyone, this is team StarLords. My name is Mr. Singh and other members of team are Manish Singh, Rohil Singh, Gaurav Singh \u0026 Deepak Singh."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,46 @@
+{
+  "userSays": [
+    {
+      "id": "2546102e-3314-4020-9f79-54f6ac79a1bd",
+      "data": [
+        {
+          "text": "Hello"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "099360f9-a25f-4caa-8751-5b449d2f5ee2",
+      "data": [
+        {
+          "text": "Hi"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "13607f88-842b-41f3-90ce-7545ac435720",
+  "name": "Greeting",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Hello, which type of place would you like to travel?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

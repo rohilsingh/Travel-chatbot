@@ -1,0 +1,84 @@
+{
+  "userSays": [
+    {
+      "id": "b0121e5c-72f4-409a-8c8e-08b7dd5c6b0b",
+      "data": [
+        {
+          "text": "winter",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        },
+        {
+          "text": " place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "0cc21c5e-cbea-4838-abfe-346ebf66519c",
+      "data": [
+        {
+          "text": "winter",
+          "alias": "seasonType",
+          "meta": "@seasonType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "d6842889-2e00-4d44-a678-f1540ad00065",
+  "name": "Season-coastal-winter",
+  "auto": true,
+  "contexts": [
+    "season",
+    "coastal"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "coastal",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@seasonType",
+          "name": "seasonType",
+          "value": "$seasonType",
+          "prompts": [
+            "Please enter the season in which you wish to travel?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "#coastal.placeType"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You should go to Mumbai, Goa or Alibaug"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

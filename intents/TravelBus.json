@@ -1,0 +1,120 @@
+{
+  "userSays": [
+    {
+      "id": "4b26e8d7-fc88-409d-a7c1-a6c1673188ff",
+      "data": [
+        {
+          "text": "show me some "
+        },
+        {
+          "text": "bus",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "fe142f89-2ae6-405f-a66d-ef63910a8ba8",
+      "data": [
+        {
+          "text": "My preferred mode of travel is "
+        },
+        {
+          "text": "bus",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "375d543a-5330-40b9-abc8-3ec5cbce287e",
+      "data": [
+        {
+          "text": "I like to travel by "
+        },
+        {
+          "text": "bus",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "700bfe55-c55f-4635-b184-d3d5d34b41c2",
+      "data": [
+        {
+          "text": "I always prefer "
+        },
+        {
+          "text": "bus",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        },
+        {
+          "text": " travelling"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "17e6af33-976e-4a24-8d27-754299d6c770",
+      "data": [
+        {
+          "text": "I want to travel by "
+        },
+        {
+          "text": "Bus",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "14fb1d53-c35e-4e28-90ad-7abb88fc6094",
+  "name": "TravelBus",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@transportMode",
+          "name": "transportMode",
+          "value": "$transportMode",
+          "prompts": [
+            "Which travel mode you prefer for travelling?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here is a relevant link, for booking bus ticket www.redbus.com"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

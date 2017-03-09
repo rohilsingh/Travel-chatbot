@@ -1,0 +1,75 @@
+{
+  "userSays": [
+    {
+      "id": "d709e535-74d5-4b36-8b66-c4c02604024f",
+      "data": [
+        {
+          "text": "religious",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        },
+        {
+          "text": " place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "74b17ec3-7b29-4ee6-a02f-62cc71fd7699",
+      "data": [
+        {
+          "text": "religious",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "10e2af94-a636-42a3-ba04-92c131861297",
+  "name": "PlaceType-Religious",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "religious",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "$placeType",
+          "prompts": [
+            "Please enter the type of place that you wish to travel?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "in which season would you like to travel"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

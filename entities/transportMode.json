@@ -1,0 +1,45 @@
+{
+  "id": "07763c7b-2094-4b24-b2d6-0d42d8c34777",
+  "name": "transportMode",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Flight",
+      "synonyms": [
+        "Flight",
+        "Aeroplane",
+        "airport",
+        "Plane",
+        "Jet"
+      ]
+    },
+    {
+      "value": "Train",
+      "synonyms": [
+        "Train",
+        "Mail",
+        "Express",
+        "Rail",
+        "Railway",
+        "Railways"
+      ]
+    },
+    {
+      "value": "Bus",
+      "synonyms": [
+        "Bus",
+        "Bus Depo",
+        "Bus Station",
+        "Bus Stop"
+      ]
+    },
+    {
+      "value": "Car",
+      "synonyms": [
+        "Car"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

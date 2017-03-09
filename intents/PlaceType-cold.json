@@ -1,0 +1,81 @@
+{
+  "userSays": [
+    {
+      "id": "581e6302-4c1a-4636-8f5f-53bdefb01311",
+      "data": [
+        {
+          "text": "I would like to go to "
+        },
+        {
+          "text": "cold",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        },
+        {
+          "text": " place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "46425b1e-7c8f-45e6-b57b-e5892991c450",
+      "data": [
+        {
+          "text": "cold",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        },
+        {
+          "text": " place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "8242663d-28d7-4277-ad93-a533d9d0c9e4",
+  "name": "PlaceType-cold",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "cold",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "$placeType",
+          "prompts": [
+            "Please enter the type of place that you wish to travel?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "in which season would like to travel?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,118 @@
+{
+  "userSays": [
+    {
+      "id": "e9dad302-5da0-4b8e-927a-3f91ae6dcc96",
+      "data": [
+        {
+          "text": "who is "
+        },
+        {
+          "text": "daddy",
+          "alias": "creators",
+          "meta": "@creators",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "e6c21ea3-4e2f-4e4a-ae4f-be4abc3142a9",
+      "data": [
+        {
+          "text": "who\u0027s your "
+        },
+        {
+          "text": "daddy",
+          "alias": "creators",
+          "meta": "@creators",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "32bc4cc5-1194-420e-b2c6-0fc2ac80835d",
+      "data": [
+        {
+          "text": "where is "
+        },
+        {
+          "text": "daddy",
+          "alias": "creators",
+          "meta": "@creators",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0ad2739b-b562-4cf5-a453-eee23a0bda2e",
+      "data": [
+        {
+          "text": "Who is your "
+        },
+        {
+          "text": "maker",
+          "alias": "creators",
+          "meta": "@creators",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "79e3f2cc-1485-46fd-99ec-1883eb8e7120",
+      "data": [
+        {
+          "text": "Who "
+        },
+        {
+          "text": "created",
+          "alias": "creators",
+          "meta": "@creators",
+          "userDefined": false
+        },
+        {
+          "text": " you"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "cbded916-a44b-4932-b199-63a6385f9611",
+  "name": "Creator",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@creators",
+          "name": "creators",
+          "value": "$creators",
+          "prompts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "I was created by the StarLords. A group of highly effecient coders."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

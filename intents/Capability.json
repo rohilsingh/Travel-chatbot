@@ -1,0 +1,56 @@
+{
+  "userSays": [
+    {
+      "id": "149dab8b-9868-4ca3-8ae7-421bea2fc9ac",
+      "data": [
+        {
+          "text": "What are your functions"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "bf2fcf2c-d26e-4bf8-a471-70c7d3ee7ae7",
+      "data": [
+        {
+          "text": "What are the things you do?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d52fd307-29ed-4ee4-bb92-1370b5bc5743",
+      "data": [
+        {
+          "text": "What can you do?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "41974083-fd02-4af2-88e1-0e84c7ed2a76",
+  "name": "Capability",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "I can suggest you places to travel, if You tell me what type of place would you like to go. I can suggest you relevant sources if you tell me your mode of transport for travel."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

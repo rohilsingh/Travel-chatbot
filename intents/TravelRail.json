@@ -1,0 +1,241 @@
+{
+  "userSays": [
+    {
+      "id": "8459cb25-a138-4231-9ffa-dfdc17bfa2d2",
+      "data": [
+        {
+          "text": "show me some "
+        },
+        {
+          "text": "trains",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "dfce434d-d6ea-4806-9d4d-dcb72947d220",
+      "data": [
+        {
+          "text": "i always travel by "
+        },
+        {
+          "text": "train",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "620cfafd-c828-49d1-971c-a6d1407130b1",
+      "data": [
+        {
+          "text": "my mode of transport is "
+        },
+        {
+          "text": "train",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "724ea1e0-3aab-43f4-81aa-d7179f050b5c",
+      "data": [
+        {
+          "text": "railways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4a85cadb-90d9-4a9f-8402-a7c5138c2cc0",
+      "data": [
+        {
+          "text": "train",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a8da3f70-8d6d-49ea-b61c-a45ad86deb65",
+      "data": [
+        {
+          "text": "i always go from "
+        },
+        {
+          "text": "train",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9a5cf987-48df-457c-bf09-652093e4cf1e",
+      "data": [
+        {
+          "text": "i would like to travel by "
+        },
+        {
+          "text": "express",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "train",
+          "alias": "transportMode1",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6dba7adb-b142-43fc-a54c-9302a30dfa6f",
+      "data": [
+        {
+          "text": "indian railways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        },
+        {
+          "text": " is my preferred mode of travelling"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7886ce70-7738-4fb6-8f56-c06a2a842d49",
+      "data": [
+        {
+          "text": "indian railways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        },
+        {
+          "text": " is my preffered mode of travelling"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "80c35ce7-49af-4429-babe-787623bfeaaa",
+      "data": [
+        {
+          "text": "i like "
+        },
+        {
+          "text": "rail",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        },
+        {
+          "text": " travelling"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6152df9d-8f4f-474f-a6b5-13c93c7ebb86",
+      "data": [
+        {
+          "text": "i would prefer "
+        },
+        {
+          "text": "railways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "00553a50-c88f-4a4f-81b3-02ebab1e84b0",
+      "data": [
+        {
+          "text": "I want to travel by "
+        },
+        {
+          "text": "train",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "b454bb75-283b-47f1-bec6-f22d9135114c",
+  "name": "TravelRail",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@transportMode",
+          "name": "transportMode",
+          "value": "$transportMode",
+          "prompts": [
+            "Which transport mode you prefer for travelling?"
+          ],
+          "isList": false
+        },
+        {
+          "dataType": "@transportMode",
+          "name": "transportMode1",
+          "value": "$transportMode1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here is a relevant link for booking train ticket www.irctc.co.in"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

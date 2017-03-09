@@ -1,0 +1,62 @@
+{
+  "userSays": [
+    {
+      "id": "7d4a8093-1513-45fb-8e85-4501f41d15dc",
+      "data": [
+        {
+          "text": "warm",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        },
+        {
+          "text": " place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "672a97e7-45d4-4467-810c-e39348619990",
+  "name": "PlaceType-Warm",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "warm",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "$placeType",
+          "prompts": [
+            "Please enter the type of place that you wish to travel?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "in which season would you like to travel"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

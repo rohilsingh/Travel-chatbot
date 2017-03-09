@@ -1,0 +1,53 @@
+{
+  "userSays": [
+    {
+      "id": "fe8e716b-39bc-4d91-a033-5ee53ba600df",
+      "data": [
+        {
+          "text": "who is "
+        },
+        {
+          "text": "nelson",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "ef4f3578-b057-4d1e-9cc2-d6474ea5fc40",
+  "name": "search",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "web.search",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

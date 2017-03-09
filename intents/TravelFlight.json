@@ -1,0 +1,223 @@
+{
+  "userSays": [
+    {
+      "id": "3021cd27-9692-4849-b42a-a94ce253ea07",
+      "data": [
+        {
+          "text": "show me some "
+        },
+        {
+          "text": "airways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "e645ca27-1e76-480d-8ee9-72613fc80d1e",
+      "data": [
+        {
+          "text": "I would like to go by "
+        },
+        {
+          "text": "Airways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "87c67d02-763f-4ef9-a711-65bbd49a0ed4",
+      "data": [
+        {
+          "text": "My mode of transport is "
+        },
+        {
+          "text": "aeroplane",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "7b768198-d70f-4a06-86ff-a7b39ef9b3ac",
+      "data": [
+        {
+          "text": "i would like to travel by "
+        },
+        {
+          "text": "jet",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "cd5a238c-7f35-4513-b10b-73fabb2f8cc4",
+      "data": [
+        {
+          "text": "I would like to travel by "
+        },
+        {
+          "text": "aeroplane",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "4c0e6515-4b80-4812-b41f-893468d01bd3",
+      "data": [
+        {
+          "text": "I always go from "
+        },
+        {
+          "text": "jet",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7c836755-fe1b-4a88-856a-ddce11a621b9",
+      "data": [
+        {
+          "text": "I always go from "
+        },
+        {
+          "text": "plane",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "684d3420-6bc9-4be2-94ab-ffdf214a6fe3",
+      "data": [
+        {
+          "text": "Airways",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f0ff45ba-5364-46a0-b94b-b54dfbf88617",
+      "data": [
+        {
+          "text": "Flight",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ca35842f-12c0-4645-9b7f-b1eb6d91cf0a",
+      "data": [
+        {
+          "text": "my mode of transport is "
+        },
+        {
+          "text": "flight",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f07ac77e-a8e4-4cd0-87b9-b6c7dafe0bca",
+      "data": [
+        {
+          "text": "i always travel by "
+        },
+        {
+          "text": "plane",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "908c5a83-e1e8-429f-98d1-1af00b89b9a0",
+      "data": [
+        {
+          "text": "I want to travel from "
+        },
+        {
+          "text": "flight",
+          "alias": "transportMode",
+          "meta": "@transportMode",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "4f390feb-244f-4a9a-9a28-3d199caee5ed",
+  "name": "TravelFlight",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@transportMode",
+          "name": "transportMode",
+          "value": "$transportMode",
+          "prompts": [
+            "Enter the transport mode that you prefer for travelling"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here is a relevant link, for flight booking https://www.makemytrip.com/flights"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

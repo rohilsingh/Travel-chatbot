@@ -1,0 +1,75 @@
+{
+  "userSays": [
+    {
+      "id": "5f633934-6dbe-4bbe-ac88-08edac17c0af",
+      "data": [
+        {
+          "text": "coastal",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f08151fb-32fe-4a95-9ecb-b3d89263172b",
+      "data": [
+        {
+          "text": "coastal",
+          "alias": "placeType",
+          "meta": "@placeType",
+          "userDefined": false
+        },
+        {
+          "text": " place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "4361cfba-aa0f-452e-9220-f5747c9a396a",
+  "name": "PlaceType-Coastal",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "season",
+          "lifespan": 2
+        },
+        {
+          "name": "coastal",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@placeType",
+          "name": "placeType",
+          "value": "$placeType",
+          "prompts": [
+            "Please enter the type of place that you wish to travel?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "In what season would you like to visit?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
